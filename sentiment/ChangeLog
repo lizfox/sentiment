@@ -1,3 +1,10 @@
+2016-01-28  Alexander Loth  <home@alexloth.com>
+
+        * DESCRIPTION: Release 0.3
+        * Adding functions to be consumed within Tableau
+        * Based on Jeff Wong's fork which includes performance optimizations
+        
+
 2011-01-10  Timothy P. Jurka  <tpjurka@ucdavis.edu>
 
 	* DESCRIPTION: Release 0.2

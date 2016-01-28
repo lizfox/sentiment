@@ -1,21 +1,21 @@
 sentiment: Tools for Sentiment Analysis
 
 Description:	sentiment is an R package with tools for sentiment analysis including bayesian classifiers for positivity/negativity and emotion classification.
-Version:		0.2
+Version:		0.3
 Depends:		R (≥ 2.14.0), tm, Rstem
-Published:		2012-01-08
-Authors:		Timothy P. Jurka
+Published:		2016-01-28
+Authors:		Timothy P. Jurka, Jeff Wong, Alexander Loth
 Maintainer:		Timothy P. Jurka <tpjurka at ucdavis.edu>
 License:		GPL-3
 
 
 INSTALLATION
 ============
-sentiment requires R 2.14+, which can be downloaded at http://www.r-project.org/. To build and install sentiment, run the following commands while in the root folder:
+sentiment requires R 2.14+, which can be downloaded at http://www.r-project.org/. To build and install sentiment directly from GitHub, run the following commands within R:
 
-R CMD REMOVE sentiment
-R CMD BUILD sentiment
-R CMD INSTALL sentiment_X.X.tar.gz (where the X's should be replaced with the version number -- e.g. 0.2)
+install.packages("devtools")
+library(devtools)
+install_github("aloth/sentiment/sentiment")
 
 
 SOURCE CODE

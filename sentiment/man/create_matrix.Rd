@@ -18,7 +18,7 @@ stemWords=FALSE, stripWhitespace=TRUE, toLower=TRUE, weighting=weightTf)
 Either character vector (e.g. data$Title) or a \code{cbind()} of columns to use for training the algorithms (e.g. \code{cbind(data$Title,data$Subject)}).
 }
   \item{language}{
-The language to be used for stemming the text data.
+The language to be used for stemming the text data, such as \code{english} or \code{german}.
 }
   \item{minDocFreq}{
 The minimum number of times a word should appear in a document for it to be included in the matrix. See package \pkg{tm} for more details.

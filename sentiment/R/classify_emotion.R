@@ -1,6 +1,8 @@
-classify_emotion <- function(textColumns,algorithm="bayes",prior=1.0,verbose=FALSE,...) {
-	matrix <- create_matrix(textColumns,...)
-	lexicon <- read.csv(system.file("data/emotions.csv.gz",package="sentiment"),header=FALSE)
+classify_emotion <- function(textColumns, language="english", algorithm="bayes", prior=1.0, verbose=FALSE, ...) {
+	matrix <- create_matrix(textColumns,language=language,...)
+	
+	lexicon_filename <- paste("data/emotions_",language,".csv.gz",sep="")
+	lexicon <- read.csv(system.file(lexicon_filename,package="sentiment"),header=FALSE)
 
 	counts <- list(anger=length(which(lexicon[,2]=="anger")),disgust=length(which(lexicon[,2]=="disgust")),fear=length(which(lexicon[,2]=="fear")),joy=length(which(lexicon[,2]=="joy")),sadness=length(which(lexicon[,2]=="sadness")),surprise=length(which(lexicon[,2]=="surprise")),total=nrow(lexicon))
 	documents <- c()

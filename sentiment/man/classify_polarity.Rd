@@ -16,6 +16,9 @@ prior=1.0,verbose=FALSE,...)
   \item{textColumns}{
 A \code{data.frame} of text documents listed one per row.
 }
+  \item{language}{
+A \code{string} specifying the language, such as \code{english} or \code{german}.
+}
   \item{algorithm}{
 A \code{string} indicating whether to use the naive \code{bayes} algorithm or a simple \code{voter} algorithm.
 }

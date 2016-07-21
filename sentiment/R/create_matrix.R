@@ -1,5 +1,10 @@
 create_matrix <- function(textColumns, language="english", minDocFreq=1, minWordLength=3, removeNumbers=TRUE, removePunctuation=TRUE, removeSparseTerms=0, removeStopwords=TRUE, stemWords=FALSE, stripWhitespace=TRUE, toLower=TRUE, weighting=weightTf) {
 	
+	# if language is not supported by Rstem, use English as fallback for word stemming algorithm
+	if (is.element(language,getStemLanguages()) == FALSE) {
+		language <- 'english'
+	}
+	
     stem_words <- function(x) {
         split <- strsplit(x," ")
         return(wordStem(split[[1]],language=language))

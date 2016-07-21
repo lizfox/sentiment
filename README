@@ -15,9 +15,9 @@ sentiment requires R 2.14+, which can be downloaded at http://www.r-project.org/
 
 install.packages("httr")
 install.packages("devtools")
+install.packages("chron")
 library(httr)
 library(devtools)
-library(chron)
 install_github("aloth/sentiment/sentiment")
 
 

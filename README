@@ -2,7 +2,7 @@ sentiment: Tools for Sentiment Analysis
 
 Description:	sentiment is an R package with tools for multi-language sentiment analysis including bayesian classifiers for positivity/negativity and emotion classification.
 Version:		1.0
-Depends:		R (≥ 2.14.0), chron, tm, Rstem
+Depends:		R (≥ 2.14.0), chron, NLP, tm, Rstem
 Published:		2016-07-21
 Authors:		Timothy P. Jurka, Alexander Loth, Jeff Wong
 Maintainer:		Alexander Loth <home@alexloth.com>
@@ -15,6 +15,8 @@ sentiment requires R 2.14+, which can be downloaded at http://www.r-project.org/
 
 install.packages("httr")
 install.packages("devtools")
+install.packages("NLP")
+install.packages("tm")
 install.packages("chron")
 library(httr)
 library(devtools)
